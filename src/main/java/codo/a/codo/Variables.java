@@ -19,7 +19,7 @@ public class Variables {
 		double d = 1.0;
 	
 		//Boolean
-		flag = true;
+		boolean flag = true;
 	}
 
 }
