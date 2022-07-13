@@ -22,23 +22,23 @@ public class ConsultarController extends HttpServlet {
 		
 		String id = req.getParameter("id");
 		
-		// Validaciones
+		//validaciones!!!
 		
 		String sql = "SELECT * FROM PRODUCTO WHERE ID = " + id;
 		
-		// Conexion OK
+		//conexion OK
 		Connection con = AdministradorDeConexiones.getConnection();
 		
 		try {
-			// Statement 
+			//statement 
 			Statement st = con.createStatement();
 			
 			//resultset
 			ResultSet rs = st.executeQuery(sql);
 			
-			if(rs.next()) { // hay datos?
+			if(rs.next()) {//�hay datos?
 				// rs > sacando los datos
-				Long idProducto = rs.getLong(1); // tomar la primer columna
+				Long idProducto = rs.getLong(1);//tomar la primer columna
 				String nombre = rs.getString(2);
 				Float precio = rs.getFloat(3);
 				Date fecha = rs.getDate(4);
@@ -46,20 +46,21 @@ public class ConsultarController extends HttpServlet {
 				String codigo = rs.getString(6);
 				
 				
-				// campos crear un objeto
+				//campos crear un objeto????
 				Producto prodFromDb = new Producto(idProducto,nombre,precio,fecha,imagen,codigo);
 				
-				// ir a otra pagina y ademas pasarle datos
+				//ir a otra pagina y ademas pasarle datos
 				
 				req.setAttribute("producto", prodFromDb);
 			}
 			
 			getServletContext().getRequestDispatcher("/detalle.jsp").forward(req, resp);
 			
-			// cierre de conexion
+			//cierre de conexion
 			con.close();
 		}catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
 }
+

@@ -19,16 +19,16 @@ public class BuscarController extends HttpServlet {
 		
 		String clave = req.getParameter("clave");
 		
-		// Crear ProductoDAO
+		//Crear ProductoDAO
 		ProductoDAO dao = new ProductoDAO();
 		
-		// Invocar el metodo buscar(clave)
+		//invocar el metodo buscar(clave)
 		List<Producto> listado = dao.buscar(clave);
 		
-		// Guardar en el request el producto
+		//guardar en el request el producto
 		req.setAttribute("listado", listado);
 		
-		// Ir a la siguiente pagina
+		//ir a la siguiente pagina
 		getServletContext().getRequestDispatcher("/listado.jsp").forward(req, resp);
 	}
 }

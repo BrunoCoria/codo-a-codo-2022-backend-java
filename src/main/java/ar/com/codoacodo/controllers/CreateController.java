@@ -10,8 +10,8 @@ import javax.servlet.http.HttpServletResponse;
 
 import ar.com.codoacodo.daos.ProductoDAO;
 
-// HERENCIA
-// Create Controller es hijo de:
+/*HERENCIA*/
+//Create Controller es hijo de :
 @WebServlet("/CreateController")
 public class CreateController extends HttpServlet {
 
@@ -23,13 +23,14 @@ public class CreateController extends HttpServlet {
 		String imagen = req.getParameter("imagen");
 		String codigo = req.getParameter("codigo");
 		
-		// Crear ProductoDAO
+		//crear ProductoDAO
 		ProductoDAO dao = new ProductoDAO();
 		
-		// Ejecutar el metodo crearProducto(parametros...)
+		//ejecutar el metodo crearProducto(parametros...)
 		dao.crearProducto(nombre, Float.parseFloat(precio), imagen, codigo);
 		
-		// Ir a la siguiente pagina
+		//ctrl+shit+o
+		//ir a la siguiente pagina
 		resp.sendRedirect(req.getContextPath()+"/api/ListadoController");
 	}
 }

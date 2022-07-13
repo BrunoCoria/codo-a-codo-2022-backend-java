@@ -22,7 +22,7 @@ public class EliminarController extends HttpServlet {
 		Connection con = AdministradorDeConexiones.getConnection();
 		
 		if(con != null) { 
-			// Delete 
+			// delete 
 			String sql = "DELETE FROM PRODUCTO WHERE id="+id;
 			
 			try {
