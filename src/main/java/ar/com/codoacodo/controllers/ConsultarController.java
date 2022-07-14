@@ -26,7 +26,7 @@ public class ConsultarController extends HttpServlet {
 		
 		String sql = "SELECT * FROM PRODUCTO WHERE ID = " + id;
 		
-		// Conexion OK
+		// Conexion Ok
 		Connection con = AdministradorDeConexiones.getConnection();
 		
 		try {

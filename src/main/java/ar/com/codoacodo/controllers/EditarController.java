@@ -42,7 +42,7 @@ public class EditarController extends HttpServlet {
 		String imagen = req.getParameter("imagen");
 		String codigo = req.getParameter("codigo");
 		
-		// Crear ProductoDAO
+		// crear ProductoDAO
 		ProductoDAO dao = new ProductoDAO();
 		
 		// Invocar actualizarProducto(params)

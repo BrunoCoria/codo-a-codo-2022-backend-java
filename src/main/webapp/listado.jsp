@@ -47,7 +47,7 @@
 					   <%
 					   	}
 					   %>
-					  </tbody>
+					  </tbody> <!-- . -->
 					</table>
 				</section>
 			</div>

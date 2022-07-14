@@ -20,7 +20,7 @@
 			</section>
 		</main>
 		<footer class="footer">
-			<p class="footer__text">Todos los derechos reservados Codo a codo ©</p>
+			<p class="footer__text">Todos los derechos reservados Codo a codo ©</p> <!-- . -->
 		</footer>
 	</body>	
 </html>
