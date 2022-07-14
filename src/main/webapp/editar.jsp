@@ -13,7 +13,7 @@
 					<% 
 					  	Producto producto = (Producto)request.getAttribute("producto");
 				  	%>
-					<h1>Editar producto ID=<%=producto.getIdProducto()%></h1>
+					<h1>Editar producto con el ID=<%=producto.getIdProducto()%></h1>
 					<!--  JSP -->
 					<form method="POST"
 						action="<%=request.getContextPath()%>/api/EditarController">

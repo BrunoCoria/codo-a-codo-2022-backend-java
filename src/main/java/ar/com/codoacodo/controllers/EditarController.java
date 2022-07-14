@@ -21,16 +21,16 @@ public class EditarController extends HttpServlet {
 		
 		String id = req.getParameter("id");
 		
-		//Crear ProductoDAO
+		// Crear ProductoDAO
 		ProductoDAO dao = new ProductoDAO();
 		
-		//invocar el metodo obtenerPorId(id)
+		// Invocar el metodo obtenerPorId(id)
 		Producto prodFromDb = dao.obtenerPorId(Long.parseLong(id));
 		
-		//guardar en el request el producto
+		// Guardar en el request el producto
 		req.setAttribute("producto", prodFromDb);
 		
-		//ir a la siguiente pagina
+		// Ir a la siguiente pagina
 		getServletContext().getRequestDispatcher("/editar.jsp").forward(req, resp);
 	}
 	
@@ -42,13 +42,13 @@ public class EditarController extends HttpServlet {
 		String imagen = req.getParameter("imagen");
 		String codigo = req.getParameter("codigo");
 		
-		//Crear ProductoDAO
+		// Crear ProductoDAO
 		ProductoDAO dao = new ProductoDAO();
 		
-		//invocar actualizarProducto(params)
+		// Invocar actualizarProducto(params)
 		dao.actualizarProducto(codigo, nombre, precio);
 
-		//ir a la siguiente pagina
+		// Ir a la siguiente pagina
 		resp.sendRedirect(req.getContextPath()+"/api/ListadoController");
 	}
 }

@@ -17,16 +17,16 @@ public class ListadoController extends HttpServlet {
 	
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		
-		//crear la instancia DE ProductoDAO
+		// Crear la instancia DE ProductoDAO
 		ProductoDAO dao = new ProductoDAO();
 		
-		//invocar al metodo listarProductos()
+		// Invocar al metodo listarProductos()
 		List<Producto> listado = dao.listarProductos();
 		
-		//grabar el listado en el request para que lo vea la siguiente pagina
+		// Grabar el listado en el request para que lo vea la siguiente pagina
 		req.setAttribute("listado", listado);
 		
-		//ir a la siguiente pagina
+		// Ir a la siguiente pagina
 		getServletContext().getRequestDispatcher("/listado.jsp").forward(req, resp);
 	}
 }

@@ -1,6 +1,7 @@
 <html>
 	<head>
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+		<link href="style.css" rel="stylesheet"/>
 	</head>
 	
 	<body>
@@ -9,7 +10,7 @@
 			<%@include file="navbar.jsp" %>
 			<div class="container">
 				<section>
-					<h1>Alta</h1>
+					<h1 class="alta__h1">Alta</h1>
 					<!--  JSP -->
 					<form method="post"
 						action="<%=request.getContextPath()%>/CreateController">
@@ -36,5 +37,8 @@
 				</section>
 			</div>
 		</main>
+		<footer class="footer">
+			<p class="footer__text">Todos los derechos reservados Codo a codo ©</p>
+		</footer>
 	</body>	
 </html>

@@ -3,10 +3,11 @@
 <html>
 	<head>
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+		<link href="style.css" rel="stylesheet"/>
 	</head>
 	
 	<body>
-		<main>
+		<main class="main">
 			<!-- ACA VA EL NAVBAR  -->
 			<%@include file="navbar.jsp" %>
 			<div class="container">
@@ -23,9 +24,9 @@
 					    </tr>
 					  </thead>
 					  <% 
-					  	//codigo java
-					  	//obtener el listado desde el request
-					  	//se guardo bajo el nombre de "listado"
+					  	// Codigo java
+					  	// Obtener el listado desde el request
+					  	// Se guardo bajo el nombre de "listado"
 					  	List<Producto> listado = (List<Producto>)request.getAttribute("listado");
 					  %>
 					  <tbody>

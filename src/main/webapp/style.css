@@ -1,0 +1,67 @@
+body {
+	background: #1A0833;
+}
+
+.index-content {
+	margin-top: 50px;
+	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 50px;
+}
+
+.index__h1 {
+	font-size: 80px;
+	border: 2px solid white;
+	padding: 20px;
+	border-radius: 5px;
+}
+
+.index__h1 {
+	color: #fff;
+}
+
+
+.index__h2,
+.instruccion {
+	color: #FCD85C;
+}
+
+.instrucciones {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/* FOOTER */
+.footer {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+
+.footer__text {
+	text-align: center;
+	color: #fff;
+}
+
+/* ALTA */
+
+.alta__h1 {
+	color: #fff;
+	font-size: 40px;
+}
+
+.form-label {
+	color: #fff;
+}
+
+.container {
+	margin-top: 50px;
+}
+
+
+
+
