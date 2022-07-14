@@ -28,7 +28,7 @@ public class BuscarController extends HttpServlet {
 		// Guardar en el request el producto
 		req.setAttribute("listado", listado);
 		
-		// Ir a la siguiente pagina a
+		// Ir a la siguiente pagina 
 		getServletContext().getRequestDispatcher("/listado.jsp").forward(req, resp);
 	}
 }

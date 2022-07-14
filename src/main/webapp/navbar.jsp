@@ -17,7 +17,7 @@
       	action="<%=request.getContextPath()%>/api/BuscarController" 
       	method="get">
         <input name="clave" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Buscar</button>
+        <button class="btn btn-outline-success" type="submit">Buscar</buttona>
       </form>
     </div>
   </div>

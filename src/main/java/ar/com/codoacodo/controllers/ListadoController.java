@@ -23,7 +23,7 @@ public class ListadoController extends HttpServlet {
 		// Invocar al metodo listarProductos()
 		List<Producto> listado = dao.listarProductos();
 		
-		// grabar el listado en el request para que lo vea la siguiente pagina
+		// Grabar el listado en el request para que lo vea la siguiente pagina
 		req.setAttribute("listado", listado);
 		
 		// Ir a la siguiente pagina

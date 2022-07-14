@@ -8,7 +8,7 @@ public class AdministradorDeConexiones {
 	public static Connection getConnection() {
 	/*	String url = "jdbc:mysql://127.0.0.1:3306/codo-a-codo?serverTimeZone=UTC&userSSL=false";
 		String username = "root";
-		String password = "root";a
+		String password = "root";
 		
 		String driverName = "com.mysql.cj.jdbc.Driver";//mysql|postrges */
 		String url = System.getenv("DATASOURCE_URL");

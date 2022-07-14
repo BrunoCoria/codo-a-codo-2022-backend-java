@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import ar.com.codoacodo.daos.ProductoDAO;
 
-// Herencia
+// HERENCIA
 // Create Controller es hijo de:
 @WebServlet("/CreateController")
 public class CreateController extends HttpServlet {

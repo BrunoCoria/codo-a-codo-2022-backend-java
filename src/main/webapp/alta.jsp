@@ -31,7 +31,7 @@
 						  <input name="codigo" type="text" class="form-control" id="exampleFormControlTextarea1" maxlength="7">
 						</div>
 						<button class="btn btn-primary">
-							Dar de alta <!-- . -->
+							Dar de alta 
 						</button>
 					</form>
 				</section>

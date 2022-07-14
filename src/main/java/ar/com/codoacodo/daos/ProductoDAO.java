@@ -17,7 +17,7 @@ public class ProductoDAO {
 	public Producto obtenerPorId(Long id) {
 		String sql = "SELECT * FROM PRODUCTO WHERE ID="+id;
 		
-		// connection
+		// Connection
 		Connection con = AdministradorDeConexiones.getConnection();
 	
 		Producto prodFromDb = null;

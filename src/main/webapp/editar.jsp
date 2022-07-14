@@ -41,7 +41,7 @@
 						  	type="text" class="form-control" id="exampleFormControlTextarea1" maxlength="7">
 						</div>
 						<button class="btn btn-primary">
-							Grabar <!-- . -->
+							Grabar 
 						</button>
 					</form>
 				</section>
